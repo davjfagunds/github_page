@@ -1,103 +1,211 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Davi Fagundes | Desenvolvedor em formação</title>
-  <!-- Fonte do Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <!-- Font Awesome para os ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-+kXt3F5+ZGPQkeKkV8gKtcRLsx9Ya7r8aVg1+Q9A+mcI9Q6DHzU2Aa7keIvqHyjsK7ie3YRhVG8SoC7PBi3/jg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #0d0d0d;
-    }
-    header {
-      background: linear-gradient(135deg, #0d0d0d, #004080);
-      color: white;
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    section {
-      padding: 2.5rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #004080;
-    }
-    .bio p {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-    .project {
-      background-color: #f9f9f9;
-      border-left: 5px solid #004080;
-      padding: 1.5rem;
-      border-radius: 10px;
-      margin-top: 1rem;
-    }
-    .project h3 {
-      margin-bottom: 0.5rem;
-    }
-    .project a {
-      color: #004080;
-      text-decoration: underline;
-    }
-    footer {
-      background-color: #0d0d0d;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 1.1rem;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Davi Fagundes</h1>
-    <p>Explorando o mundo do código com curiosidade e propósito</p>
-  </header>
-
-  <section class="bio">
-    <h2>Sobre mim</h2>
-    <p>Sou estudante de Engenharia de Software no CEUB, apaixonado por tecnologia e sempre em busca de novos aprendizados. Tenho interesse especial em automação e desenvolvimento com Python, e atualmente aprofundo meus conhecimentos em lógica de programação e ferramentas de versionamento.</p>
-    <p>Atualmente, estou imerso no curso "Python 3 do Básico ao Avançado" de Luiz Otávio Miranda, enquanto aplico meus conhecimentos em projetos acadêmicos e pessoais.</p>
-  </section>
-
-  <section>
-    <h2>Projetos em Destaque</h2>
-    <div class="project">
-      <h3>Portfólio Python</h3>
-      <p>Repositório com exercícios e soluções desenvolvidas durante a graduação e o curso de Python. Um espaço para demonstrar minha evolução e práticas em lógica, automação e boas práticas com a linguagem.</p>
-      <p><a href="https://github.com/seu-usuario/repositorio" target="_blank">Acesse o repositório</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>Obrigado por visitar! Que a curiosidade te leve longe. 🚀</p>
-  </footer>
-</body>
-</html>
-
+ <!DOCTYPE html>
+      <html lang="pt-br">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Davi Fagundes - Portfólio</title>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              color: #333;
+              line-height: 1.6;
+            }
+            header {
+              background: linear-gradient(to right, #0c2461, #000000);
+              color: white;
+              text-align: center;
+              padding: 2rem 1rem;
+            }
+            h1 {
+              font-size: 2rem;
+              margin-bottom: 1rem;
+            }
+            .container {
+              max-width: 1000px;
+              margin: 0 auto;
+              padding: 1rem;
+            }
+            section {
+              background: white;
+              margin-bottom: 2rem;
+              padding: 1.5rem;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            h2 {
+              color: #0c2461;
+              border-bottom: 2px solid #e3f2fd;
+              padding-bottom: 0.5rem;
+              font-size: 1.5rem;
+            }
+            ul {
+              list-style-type: none;
+              padding-left: 0;
+            }
+            li {
+              margin-bottom: 0.8rem;
+              display: flex;
+              align-items: flex-start;
+            }
+            .icon {
+              margin-right: 0.5rem;
+              font-size: 1.25rem;
+            }
+            .tech-grid {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              gap: 1.5rem;
+              padding-top: 1rem;
+            }
+            .tech-item {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+            }
+            .tech-icon {
+              background: #e3f2fd;
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 0.5rem;
+              font-size: 2rem;
+            }
+            .project {
+              background: #f0f8ff;
+              padding: 1rem;
+              border-radius: 5px;
+              border: 1px solid #d4e6f6;
+              margin-top: 1rem;
+            }
+            .project h3 {
+              font-size: 1.2rem;
+              margin-top: 0;
+              display: flex;
+              align-items: center;
+            }
+            .contact-buttons {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 1rem;
+              margin-top: 1.5rem;
+            }
+            .contact-button {
+              background: #0c2461;
+              color: white;
+              padding: 0.8rem 1.5rem;
+              text-decoration: none;
+              border-radius: 5px;
+              display: inline-flex;
+              align-items: center;
+              transition: background 0.3s;
+            }
+            .contact-button:hover {
+              background: #1a3a85;
+            }
+            .linkedin {
+              background: #0077B5;
+            }
+            .linkedin:hover {
+              background: #005fa3;
+            }
+            .email {
+              background: #444;
+            }
+            .email:hover {
+              background: #333;
+            }
+            footer {
+              background: linear-gradient(to right, #0c2461, #000000);
+              color: white;
+              text-align: center;
+              padding: 2rem 1rem;
+            }
+            @media (min-width: 768px) {
+              h1 {
+                font-size: 2.5rem;
+              }
+              .contact-buttons {
+                flex-direction: row;
+                justify-content: center;
+              }
+            }
+          </style>
+        </head>
+        <body>
+          <header>
+            <h1>👋 Olá! Eu sou Davi Fagundes</h1>
+            <p>Estudante de Engenharia de Software apaixonado por programação</p>
+          </header>
+          
+          <div class="container">
+            <section>
+              <h2>Sobre Mim</h2>
+              <ul>
+                <li><span class="icon">🎓</span> Estudante de Engenharia de Software no CEUB</li>
+                <li><span class="icon">🐍</span> Apaixonado por programação, especialmente com Python</li>
+                <li><span class="icon">📚</span> Estudando lógica de programação e automação</li>
+                <li><span class="icon">💻</span> Cursando: "Python 3 do Básico ao Avançado" – Udemy (Luiz Otávio Miranda)</li>
+              </ul>
+            </section>
+            
+            <section>
+              <h2>Tecnologias que estudo</h2>
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <div class="tech-icon">🐍</div>
+                  <p>Python</p>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-icon">📝</div>
+                  <p>Git</p>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-icon">🐱</div>
+                  <p>GitHub</p>
+                </div>
+                <div class="tech-item">
+                  <div class="tech-icon">📋</div>
+                  <p>VS Code</p>
+                </div>
+              </div>
+            </section>
+            
+            <section>
+              <h2>Projetos em Destaque</h2>
+              <div class="project">
+                <h3><span class="icon">📁</span> Portfólio Python – CEUB & Curso</h3>
+                <p>Repositório com atividades práticas da faculdade e do curso online.</p>
+                <a href="#" style="display: inline-block; background: #0c2461; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px; margin-top: 0.5rem;">Ver Projeto</a>
+              </div>
+            </section>
+            
+            <section>
+              <h2>Como me encontrar</h2>
+              <div class="contact-buttons">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-button linkedin">
+                  <span class="icon">🔗</span>
+                  LinkedIn
+                </a>
+                <a href="mailto:email@example.com" class="contact-button email">
+                  <span class="icon">✉️</span>
+                  Email
+                </a>
+              </div>
+            </section>
+          </div>
+          
+          <footer>
+            <p>Obrigado por visitar meu perfil!</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 Davi Fagundes. Todos os direitos reservados.</p>
+          </footer>
+        </body>
+      </html>
 
